@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchCoursesFromApi } from "../services/api";
+import { coursesData } from "../data/courses";
 
 export const useCourses = () => {
   const [courses, setCourses] = useState([]);
@@ -7,10 +7,8 @@ export const useCourses = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchCoursesFromApi().then((data) => {
-      setCourses(data);
-      setLoading(false);
-    });
+    setCourses(coursesData);
+    setLoading(false);
   }, []);
 
   return { courses, loading, error };

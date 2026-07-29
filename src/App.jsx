@@ -1,4 +1,4 @@
-import  { useContext } from "react";
+import { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import { useCourses } from "./hooks/useCourses";
@@ -7,6 +7,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Sidebar } from "./components/Sidebar/Sidebar";
 import { Login } from "./pages/Login/Login";
 import { Dashboard } from "./pages/Dashboard/Dashboard";
+import { Courses } from "./pages/Courses/Courses";
 import { CourseDetails } from "./pages/CourseDetails/CourseDetails";
 import { Loader } from "./components/Loader/Loader";
 import { ErrorMessage } from "./components/ErrorMessage/ErrorMessage";
@@ -28,7 +29,8 @@ export default function App() {
           {error && <ErrorMessage message={error} />}
           {!loading && !error && (
             <Routes>
-              <Route path="/" element={<Dashboard courses={courses} isFavorite={isFavorite} onToggleFav={toggleFavorite} />} />
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/courses" element={<Courses courses={courses} isFavorite={isFavorite} onToggleFav={toggleFavorite} />} />
               <Route path="/course/:id" element={<CourseDetails courses={courses} isFavorite={isFavorite} onToggleFav={toggleFavorite} />} />
             </Routes>
           )}

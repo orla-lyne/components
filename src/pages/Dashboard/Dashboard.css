@@ -1,0 +1,37 @@
+.dashboard-welcome {
+  width: 100%;
+}
+.welcome-banner {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+.welcome-banner h2 {
+  margin: 10px 0 6px 0;
+}
+.welcome-banner p {
+  color: #64748b;
+}
+.dashboard-stats-row {
+  display: flex;
+  gap: 20px;
+}
+.stat-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  color: #2563eb;
+}
+.stat-box h4 {
+  margin: 8px 0 4px 0;
+  color: #0f172a;
+}
+.stat-box p {
+  color: #64748b;
+  font-size: 0.9rem;
+}

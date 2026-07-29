@@ -1,0 +1,36 @@
+.course-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.course-card-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.course-card-body {
+    padding: 15px;
+}
+
+.course-card-title {
+    font-size: 1.1rem;
+    color: #1e3a8a;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.course-info-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.course-card-actions {
+    margin-top: 12px;
+}

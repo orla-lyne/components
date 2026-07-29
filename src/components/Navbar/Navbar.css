@@ -1,0 +1,31 @@
+.navbar {
+    padding: 0 30px;
+    background-color: #1e293b;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-title {
+    font-size: 1.2rem;
+}
+
+.navbar-user {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
